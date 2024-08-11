@@ -1,0 +1,301 @@
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url(../fonts/JosefinSans/JosefinSans-Medium.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'JosefinSans';
+  src: url(../fonts/JosefinSans/JosefinSans-Bold.ttf);
+  font-weight: 900;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'JosefinSans';
+}
+:root{
+  --primary-color:#ed7c6a;
+  --secondary-color:#333;
+  --whiten-color:#eeeeee;
+  --bg-color:#0f7b65;
+}
+body{
+  overflow-x: hidden;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+nav{
+  position: fixed !important;
+  width: 100%;
+  z-index: 5;
+  padding:0 0 5px !important;
+}
+.brand-logo{
+  height: 80px;
+}
+.nav-link{
+  color: var(--whiten-color) !important;
+  margin: 0 8px;
+  transition: all 0.3s;
+  border-bottom: 2px solid #ffffff00;
+}
+.nav-link:hover{
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-collapse{
+  margin-left: 22%;
+}
+@media (min-width: 992px) { 
+  .navbar-collapse{
+  margin-left: 29%;
+  }
+}
+
+
+.nav-link{
+  font-size:18px;
+}
+
+.btn-log-out{
+  padding: 5px 15px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: var(--whiten-color);
+  transition: all 0.3s;
+}
+.btn-log-out:hover{
+  color: var(--whiten-color);
+}
+
+/* nav end */
+
+/* header start */
+
+header{
+  background: url(../images/download.webp) top / cover no-repeat fixed;
+  padding: 150px 0 ;
+  position: relative;
+  z-index: 1;
+}
+
+
+header > .container > .text {
+  padding: 40px 25px;
+  background-color: #67bfa3;
+  border-radius: 20px;
+  width: min(450px,80%);
+  margin-left: 120px;
+}
+
+header > .container > .text > p{
+  font-size: 55px;
+  color: var(--whiten-color);
+}
+
+/* header end */
+/* Section About */
+section{
+  padding: 50px 0 30px;
+}
+#about > .container > h2{
+  border-bottom: 5px solid #ed7c6a;
+  padding-bottom: 10px;
+  width: fit-content;
+  margin: auto;
+}
+#about .container .row .photo{
+  background: url("../images/111.webp") bottom left no-repeat ;
+  background-size: 150px;
+  padding: 0 0 20px 15px;
+}
+
+#about .container .row .information h3{
+  margin: 10px 0;
+  color: var(--bg-color);
+}
+
+#about .container .row .information p{
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+/* ABOUT END */
+/* features  start*/
+#features{
+  padding: 70px 0;
+  background: url(../images/i-love-my-job-so-much_329181-2178.webp )  center / cover  no-repeat fixed;
+  background-size: 1500px;
+  position: relative;
+  z-index: 1;
+}
+#features::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #0f7b65;
+  opacity: 0.5;
+}
+
+#features .container h2{
+  color:#fff;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#features .container .row {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  gap: 20px 20px;
+}
+#features .container .row .card{
+  padding: 15px 10px 30px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+#features .container .row .card:hover{
+  box-shadow: -1px 1px 20px;
+  scale: 1.03;
+}
+
+#features .container .row .card img{
+  height: 150px;
+  padding: 5px;
+}
+
+#features .container .row .card h3{
+  padding-top: 20px;
+  color: #67bfa3;
+  font-size: 22px;
+}
+
+#features .container .row .card p{
+  font-size: 14px;
+  text-align: center;
+}
+/* features end */
+#system-goals .container .row {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  gap: 20px 20px;
+}
+#system-goals .container .row img{
+  width: 80%;
+  margin: 30px 0;
+}
+/* footer */
+footer{
+  padding: 60px 0 10px ;
+  background-color: var(--bg-color);
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+}
+footer .main-title{
+  color: var(--whiten-color);
+  text-align: center;
+}
+footer .main-title h1{
+  font-weight: 900;
+}
+footer h2{
+  font-size: 20px;
+  color: var(--primary-color) !important;
+  margin-bottom: 0 !important;
+}
+footer ul{
+  list-style: none;
+  padding-left: 0 !important;
+}
+footer li{
+  margin: 10px 0;
+}
+footer li a {
+  color: var(--whiten-color);
+}
+footer > .container > .row > p{
+  color: var(--whiten-color);
+}
+
+footer > .container > .row > p > a{
+  color: var(--primary-color);
+}
+
+footer  .container  .row  a{
+  transition: all 0.4s;
+}
+footer  .container  .row  a:hover{
+  scale: 1.1;
+  color: var(--primary-color);
+}
+
+footer > .container > .row > .social > a > svg{
+  color: var(--whiten-color);
+  height: 30px;
+}
+@media (max-width: 768.1px) {
+  .navbar-collapse {
+    margin-left:0;
+    padding: 20px;
+  }
+  
+  header .container .social .social-item h3 {
+    display: none;
+  }
+  #about .container .row .photo {
+    padding: 0 0 20px 0px;
+  }
+  #features .container .row {
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  }
+  #system-goals .container .row {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  footer {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  footer > .container > .row > .d-flex{
+    justify-content: space-between !important;
+    padding-right: 20px;
+  }
+  header > .container > .text {
+  padding: 30px 25px;
+  margin-left: 0;
+  }
+  header > .container > .text > p{
+    font-size: 35px;
+  }
+}
+@media (max-width:540px) {
+  #features .container .row {
+    grid-template-columns: 90%;
+  }
+  #features .container .row .card{
+    padding: 30px 20px;
+  }
+  #features .container .row .card img{
+    height: 250px;
+  }
+  #system-goals .container .row {
+    grid-template-columns: 90%;
+  }
+  
+}
